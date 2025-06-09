@@ -90,7 +90,7 @@ octopus:
   certsVolume:
     size: 1Gi
     storageClassName: ""
-    storageAccessMode:
+    storageAccessMode: ReadWriteOnce
 
   service:
     type: NodePort 
