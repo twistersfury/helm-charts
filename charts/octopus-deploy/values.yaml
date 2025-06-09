@@ -86,6 +86,11 @@ octopus:
     size: 1Gi
     storageClassName: ""
     storageAccessMode: ReadWriteOnce
+  # Volume used for mounting custom certs
+  certsVolume:
+    size: 1Gi
+    storageClassName: ""
+    storageAccessMode:
 
   service:
     type: NodePort 
