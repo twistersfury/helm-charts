@@ -2,7 +2,8 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ include "nfs.pvcName" . }} 
+  name: {{ include "nfs.pvcName" . }}
+  namespace: {{ .Release.Namespace | quote }}
 spec:
   accessModes:
     - ReadWriteMany
